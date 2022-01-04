@@ -6667,7 +6667,7 @@
 	      }
 	      var attrs = await Contact.getAttrs(_this.gun);
 	      var linkTo = await _this.gun.get('linkTo').then();
-	      var link = 'https://esones0.net/#/identities/' + linkTo.type + '/' + linkTo.value;
+	      var link = 'https://priceless-peach.netlify.app/#/identities/' + linkTo.type + '/' + linkTo.value;
 	      var mva = Contact.getMostVerifiedAttributes(attrs);
 	      linkEl.innerHTML = '<a href="' + link + '">' + (mva.type && mva.type.attribute.value || mva.nickname && mva.nickname.attribute.value || linkTo.type + ':' + linkTo.value) + '</a><br>';
 	      linkEl.innerHTML += '<small>Received: <span class="iris-pos">+' + (data.receivedPositive || 0) + '</span> / <span class="iris-neg">-' + (data.receivedNegative || 0) + '</span></small><br>';
@@ -8300,7 +8300,7 @@
 
 
 	  Channel.prototype.getSimpleLink = function getSimpleLink() {
-	    var urlRoot = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'https://esones0.net/';
+	    var urlRoot = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'https://priceless-peach.netlify.app/';
 
 	    if (this.uuid) {
 	      return urlRoot + '?channelId=' + this.uuid + '&inviter=' + this.key.pub;
@@ -8321,7 +8321,7 @@
 	        urlRoot = _ref.urlRoot,
 	        subscribe = _ref.subscribe;
 
-	    urlRoot = urlRoot || 'https://esones0.net/';
+	    urlRoot = urlRoot || 'https://priceless-peach.netlify.app/';
 	    if (!this.uuid) {
 	      throw new Error('Only group channels may have chat links');
 	    }
@@ -8360,7 +8360,7 @@
 	  };
 
 	  Channel.prototype.createChatLink = async function createChatLink() {
-	    var urlRoot = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'https://esones0.net/';
+	    var urlRoot = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'https://priceless-peach.netlify.app/';
 
 	    var sharedKey = await Gun.SEA.pair();
 	    var sharedKeyString = _JSON$stringify(sharedKey);
@@ -8625,7 +8625,7 @@
 
 
 	  Channel.createChatLink = async function createChatLink(gun, key) {
-	    var urlRoot = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'https://esones0.net/';
+	    var urlRoot = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'https://priceless-peach.netlify.app/';
 
 	    var user = gun.user();
 	    user.auth(key);
@@ -8655,7 +8655,7 @@
 
 
 	  Channel.getMyChatLinks = async function getMyChatLinks(gun, key) {
-	    var urlRoot = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'https://esones0.net/';
+	    var urlRoot = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'https://priceless-peach.netlify.app/';
 	    var callback = arguments[3];
 	    var subscribe = arguments[4];
 
@@ -13474,8 +13474,8 @@
 	}
 
 	var _templateObject$4 = _taggedTemplateLiteralLoose(['\n      <div class="iris-search-box" style="position: relative;">\n        <form onSubmit=', '>\n          <label>\n            <input class="', '" type="text" placeholder="Search" onInput=', '/>\n          </label>\n        </form>\n        <', ' class="search-box-results" style="position: absolute; background-color: white; border: 1px solid #eee; border-radius: 8px; left: ', '">\n          ', '\n          ', '\n        <//>\n      </div>\n    '], ['\n      <div class="iris-search-box" style="position: relative;">\n        <form onSubmit=', '>\n          <label>\n            <input class="', '" type="text" placeholder="Search" onInput=', '/>\n          </label>\n        </form>\n        <', ' class="search-box-results" style="position: absolute; background-color: white; border: 1px solid #eee; border-radius: 8px; left: ', '">\n          ', '\n          ', '\n        <//>\n      </div>\n    ']),
-	    _templateObject2$2 = _taggedTemplateLiteralLoose(['\n              <a style="width: 300px; display: flex; padding: 5px; flex-direction: row" href="https://esones0.net/#/profile/', '" onClick=', '>\n                <', ' pub=', ' width=40/>\n                <', ' marginLeft="5px">\n                  ', '<br/>\n                  <small>\n                    ', '\n                  </small>\n                <//>\n              <//>\n            '], ['\n              <a style="width: 300px; display: flex; padding: 5px; flex-direction: row" href="https://esones0.net/#/profile/', '" onClick=', '>\n                <', ' pub=', ' width=40/>\n                <', ' marginLeft="5px">\n                  ', '<br/>\n                  <small>\n                    ', '\n                  </small>\n                <//>\n              <//>\n            ']),
-	    _templateObject3 = _taggedTemplateLiteralLoose(['\n            <a class="follow-someone" style="padding:5px;">Follow someone to see more search results</a>\n            <a style="width: 300px; display: flex; padding: 5px; flex-direction: row" onClick=', ' href="https://esones0.net/#/profile/', '" class="suggested">\n              <', ' pub=', ' width=40/>\n              <', ' alignItems="center" marginLeft="5px"><i>Suggested</i><//>\n            </a>\n          '], ['\n            <a class="follow-someone" style="padding:5px;">Follow someone to see more search results</a>\n            <a style="width: 300px; display: flex; padding: 5px; flex-direction: row" onClick=', ' href="https://esones0.net/#/profile/', '" class="suggested">\n              <', ' pub=', ' width=40/>\n              <', ' alignItems="center" marginLeft="5px"><i>Suggested</i><//>\n            </a>\n          ']);
+	    _templateObject2$2 = _taggedTemplateLiteralLoose(['\n              <a style="width: 300px; display: flex; padding: 5px; flex-direction: row" href="https://priceless-peach.netlify.app/#/profile/', '" onClick=', '>\n                <', ' pub=', ' width=40/>\n                <', ' marginLeft="5px">\n                  ', '<br/>\n                  <small>\n                    ', '\n                  </small>\n                <//>\n              <//>\n            '], ['\n              <a style="width: 300px; display: flex; padding: 5px; flex-direction: row" href="https://priceless-peach.netlify.app/#/profile/', '" onClick=', '>\n                <', ' pub=', ' width=40/>\n                <', ' marginLeft="5px">\n                  ', '<br/>\n                  <small>\n                    ', '\n                  </small>\n                <//>\n              <//>\n            ']),
+	    _templateObject3 = _taggedTemplateLiteralLoose(['\n            <a class="follow-someone" style="padding:5px;">Follow someone to see more search results</a>\n            <a style="width: 300px; display: flex; padding: 5px; flex-direction: row" onClick=', ' href="https://priceless-peach.netlify.app/#/profile/', '" class="suggested">\n              <', ' pub=', ' width=40/>\n              <', ' alignItems="center" marginLeft="5px"><i>Suggested</i><//>\n            </a>\n          '], ['\n            <a class="follow-someone" style="padding:5px;">Follow someone to see more search results</a>\n            <a style="width: 300px; display: flex; padding: 5px; flex-direction: row" onClick=', ' href="https://priceless-peach.netlify.app/#/profile/', '" class="suggested">\n              <', ' pub=', ' width=40/>\n              <', ' alignItems="center" marginLeft="5px"><i>Suggested</i><//>\n            </a>\n          ']);
 
 	var suggestedFollow = 'hyECQHwSo7fgr2MVfPyakvayPeixxsaAWVtZ-vbaiSc.TXIp8MnCtrnW6n2MrYquWPcc-DTmZzMBmc2yaGv9gIU';
 
@@ -13586,7 +13586,7 @@
 	    var query = this.base.querySelector('input').value;
 
 	    if (this.props['on-select']) {
-	      var s = query.split('https://esones0.net/#/profile/');
+	      var s = query.split('https://priceless-peach.netlify.app/#/profile/');
 	      if (s.length > 1) {
 	        return this.props['on-select']({ key: s[1] });
 	      }

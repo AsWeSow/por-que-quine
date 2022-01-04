@@ -35,8 +35,8 @@ function subscribeToMessages(chatId) {
 
 function followChatLink(str) {
   if (str && str.indexOf('http') === 0) {
-    if (str.indexOf('https://esones0.net#/') === 0) {
-      route(str.replace('https://esones0.net/#'));
+    if (str.indexOf('https://priceless-peach.netlify.app#/') === 0) {
+      route(str.replace('https://priceless-peach.netlify.app/#'));
       return true;
     } else if (str.length > 30) {
       const s = str.split('?');

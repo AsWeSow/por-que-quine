@@ -73,9 +73,9 @@ class PublicMessage extends Message {
     if (this.state.msg && !this.linksDone) {
       $(this.base).find('a').off().on('click', e => {
         const href = $(e.target).attr('href');
-        if (href && href.indexOf('https://esones0.net/') === 0) {
+        if (href && href.indexOf('https://priceless-peach.netlify.app/') === 0) {
           e.preventDefault();
-          window.location = href.replace('https://esones0.net/', '');
+          window.location = href.replace('https://priceless-peach.netlify.app/', '');
         }
       });
       this.linksDone = true;

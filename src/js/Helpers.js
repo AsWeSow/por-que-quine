@@ -2000,6 +2000,6 @@ export default {
   },
 
   getProfileLink(pub) {
-    return 'https://esones0.net#/profile/' + encodeURIComponent(pub);
+    return 'https://priceless-peach.netlify.app#/profile/' + encodeURIComponent(pub);
   },
 };

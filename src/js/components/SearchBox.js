@@ -66,7 +66,7 @@ class SearchBox extends Component {
     const query = $(this.base).find('input').val();
 
     if (this.props.onSelect) {
-      const s = query.split('https://esones0.net/#/profile/');
+      const s = query.split('https://priceless-peach.netlify.app/#/profile/');
       if (s.length > 1) {
         return this.props.onSelect({key: s[1]});
       }
