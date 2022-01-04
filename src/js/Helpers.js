@@ -2000,6 +2000,6 @@ export default {
   },
 
   getProfileLink(pub) {
-    return 'https://priceless-peach.netlify.app#/profile/' + encodeURIComponent(pub);
+    return 'https://0a28-50-228-170-130.ngrok.io#/profile/' + encodeURIComponent(pub);
   },
 };

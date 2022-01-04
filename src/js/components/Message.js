@@ -18,9 +18,9 @@ class Message extends Component {
   componentDidMount() {
     $(this.base).find('a').click(e => {
       const href = $(e.target).attr('href');
-      if (href && href.indexOf('https://priceless-peach.netlify.app/') === 0) {
+      if (href && href.indexOf('https://0a28-50-228-170-130.ngrok.io/') === 0) {
         e.preventDefault();
-        window.location = href.replace('https://priceless-peach.netlify.app/', '');
+        window.location = href.replace('https://0a28-50-228-170-130.ngrok.io/', '');
       }
     });
   }

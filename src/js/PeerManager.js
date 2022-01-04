@@ -8,7 +8,9 @@ import {translate as t} from './Translation.js';
 var MAX_PEER_LIST_SIZE = 10;
 var MAX_CONNECTED_PEERS = iris.util.isElectron ? 2 : 1;
 const DEFAULT_PEERS = {
-  'https://shielded-waters-20218.herokuapp.com/': {}
+  'https://shielded-waters-20218.herokuapp.com/gun': {},
+  'https://ancient-depths-76041.herokuapp.com/gun': {},
+  'https://nameless-peak-84181.herokuapp.com/gun': {},
 };
 var peers = getPeers();
 
