@@ -2000,7 +2000,6 @@ export default {
   },
 
   getProfileLink(pub) {
-    return 'https://43b5-50-228-170-130.ngrok.io
-/#/profile/' + encodeURIComponent(pub);
+    return 'https://esones0.net#/profile/' + encodeURIComponent(pub);
   },
 };

@@ -73,11 +73,9 @@ class PublicMessage extends Message {
     if (this.state.msg && !this.linksDone) {
       $(this.base).find('a').off().on('click', e => {
         const href = $(e.target).attr('href');
-        if (href && href.indexOf('https://43b5-50-228-170-130.ngrok.io
-/') === 0) {
+        if (href && href.indexOf('https://esones0.net/') === 0) {
           e.preventDefault();
-          window.location = href.replace('https://43b5-50-228-170-130.ngrok.io
-/', '');
+          window.location = href.replace('https://esones0.net/', '');
         }
       });
       this.linksDone = true;

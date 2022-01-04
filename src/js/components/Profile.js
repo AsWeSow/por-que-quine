@@ -229,8 +229,7 @@ class Profile extends Component {
                 ${followable ? html`<${FollowButton} id=${this.props.id}/>` : ''}
                 <button onClick=${() => route('/chat/' + this.props.id)}>${t('send_message')}</button>
                 ${uuid ? '' : html`
-                  <${CopyButton} text=${t('copy_link')} title=${this.state.name} copyStr=${'https://43b5-50-228-170-130.ngrok.io
-/' + window.location.hash}/>
+                  <${CopyButton} text=${t('copy_link')} title=${this.state.name} copyStr=${'https://esones0.net/' + window.location.hash}/>
                 `}
                 <button onClick=${() => $('#profile-page-qr').toggle()}>${t('show_qr_code')}</button>
                 ${this.isMyProfile ? '' : html`
@@ -404,8 +403,7 @@ class Profile extends Component {
     }
     qrCodeEl.empty();
     new QRCode(qrCodeEl[0], {
-      text: 'https://43b5-50-228-170-130.ngrok.io
-//' + window.location.hash,
+      text: 'https://esones0.net//' + window.location.hash,
       width: 300,
       height: 300,
       colorDark : "#000000",

@@ -9,4 +9,3 @@ In that regard, Iris prioritizes decentralization and availability over perfect 
 Profile names, photos and online status are currently public. That can be changed when advanced group permissions are developed.
 
 The application is an unaudited proof-of-concept implementation, so don't use it for security critical purposes.
-

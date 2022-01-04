@@ -8,6 +8,7 @@ import { route } from './lib/preact-router.es.js';
 
 const chats = window.chats = {};
 const subscribedChats = new Set();
+
 function deleteChat(pub) {
   iris.Channel.deleteChannel(publicState, Session.getKey(), pub);
   delete chats[pub];
@@ -34,10 +35,8 @@ function subscribeToMessages(chatId) {
 
 function followChatLink(str) {
   if (str && str.indexOf('http') === 0) {
-    if (str.indexOf('https://43b5-50-228-170-130.ngrok.io
-/#/') === 0) {
-      route(str.replace('https://43b5-50-228-170-130.ngrok.io
-/#/', ''));
+    if (str.indexOf('https://esones0.net#/') === 0) {
+      route(str.replace('https://esones0.net/#'));
       return true;
     } else if (str.length > 30) {
       const s = str.split('?');
